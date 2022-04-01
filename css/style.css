@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --maincolor: rgb(60 61 75);
+    --secondcolor: rgb(72 97 104);
+    --thirdcolor: rgba(228, 166, 124, 0.658);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+img {
+    filter: grayscale();
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondcolor);
+    text-align: center;
+}
+
+/* ------------- HEADER ----------------- */
+
+
+.row-placeholder {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.container.header {
+    position: sticky;
+    top: 20px;
+}
+
+#header {
+    background-image: url(../img/forest.jpg);
+    background-size: cover;
+    height: 60vh;
+}
+
+#nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    position: sticky;
+    top:0;
+}
+
+#nav > li >a{
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.citation {
+    color: white;
+    text-align: right;
+}
+
+/*----------PARCOURS-----------------*/
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+table th {
+    background-color: var(--maincolor);
+    color: white;
+}
+
+table td {
+    
+    border: 1px var(--maincolor) solid;
+}
+
+table tr, table th, table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/*----------ABOUT US----------------*/
+.col-4.triple {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.col-4.triple > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: var(--secondcolor);
+    border: 2px var(--secondcolor) solid;
+    border-radius: 1rem;
+    color: white;
+    display: inline-block;
+    padding: 10px 10px;
+    transition: 60ms;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: white;
+    border: 2px var(--secondcolor) solid;
+    color: var(--secondcolor);
+}
+
+
+
+/*------------------GALLERY-------------------*/
+
+img.gallery {
+    transition: all 1s;
+}
+
+img.gallery:hover {
+    filter: none;
+    transform: scale(1.5);
+}
+
+
+
+/*--------CONTACT US------------*/
+
+ul.contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%; //WEITE MUSS AUF 100% GEHEN!
+}
+
+.contact > li {
+    list-style: none;
+}
+
+
+/*----------------FORM--------------*/
+
+.form-container {
+    display: flex;
+}
+
+
+form {
+    width: 40%;
+}
+
+iframe {
+    margin: 0 auto;
+    width: 50%;
+}
+
+form > * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+form #textarea{  
+   resize: none;
+}
+
+#textarea:active {
+    border: none;
+}
+
+/*-------FOOTER-------------*/
+
+footer nav ul {
+    display: flex;
+}
+
+footer nav ul > li {
+    list-style: none;
+    padding: 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: var(--secondcolor);
+}
+
+nav + div {
+    color: var(--secondcolor);
+}
+
