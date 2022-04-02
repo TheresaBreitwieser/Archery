@@ -5,13 +5,14 @@
 :root {
     --maincolor: rgb(60 61 75);
     --secondcolor: rgb(72 97 104);
-    --thirdcolor: rgba(228, 166, 124, 0.658);
 }
 
 html, body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    
 }
 
 img {
@@ -55,10 +56,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #nav > li >a{
     color: white;
-    padding: 10px;
     font-size: 1.5rem;
+    padding: 10px;
+    transition: all 80ms;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+#nav >li >a:hover {
+    text-decoration: underline;
 }
 
 .citation {
@@ -89,7 +95,7 @@ table tr, table th, table td {
     text-align: center;
 }
 
-
+/*------------MAIN-------------*/
 /*----------ABOUT US----------------*/
 .col-4.triple {
     align-items: center;
@@ -126,12 +132,15 @@ table tr, table th, table td {
 /*------------------GALLERY-------------------*/
 
 img.gallery {
+    position: relative;
     transition: all 1s;
+    z-index: 1;
 }
 
 img.gallery:hover {
     filter: none;
     transform: scale(1.5);
+    z-index: 10;
 }
 
 
@@ -143,13 +152,16 @@ ul.contact {
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    width: 100%; //WEITE MUSS AUF 100% GEHEN!
+    width: 100%; /*width muss auf 100% sein!*/
 }
 
 .contact > li {
     list-style: none;
 }
 
+.contact >li >img {
+   padding-right: 5px;
+}
 
 /*----------------FORM--------------*/
 
@@ -177,9 +189,23 @@ form #textarea{
    resize: none;
 }
 
-#textarea:active {
-    border: none;
+@media screen and (max-width: 768px) {
+    form {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    iframe {
+        display:none;
+    }
+
+    .contact {
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }
+
 
 /*-------FOOTER-------------*/
 
@@ -199,5 +225,9 @@ footer nav ul li a {
 
 nav + div {
     color: var(--secondcolor);
+}
+
+footer .row-placeholder {
+    margin-top: 50px;
 }
 

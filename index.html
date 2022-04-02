@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archery</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -18,11 +23,11 @@
             <div class="row-placeholder">
                 <img src="img/logo.png" alt="logo">
                 <ul id="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Parcours</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header" target="_self">Home</a></li>
+                    <li><a href="#parcours" target="_self">Parcours</a></li>
+                    <li><a href="#about-us" target="_self">About us</a></li>
+                    <li><a href="#gallery" target="_self">Gallery</a></li>
+                    <li><a href="#contact-us" target="_self">Contact</a></li>
                 </ul>
             </div>
             <div class="citation">
@@ -31,6 +36,7 @@
         </div>
     </header>
 
+    <main>
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -55,7 +61,7 @@
             </div>
 
         </div>
-        <h2>Parcours</h2>
+        <h2 id="parcours">Parcours</h2>
         <div class="row">
             <div class="col-12">
                 <table>
@@ -95,7 +101,7 @@
 
    
         <div class="container">
-            <h2>About us</h2>
+            <h2 id="about-us">About us</h2>
             <div class="row">
                 <div class="col-4 triple">
                     <img src="img/trail-small.png" alt="Archers">
@@ -120,7 +126,7 @@
     
 
     <div class="container">
-         <h2>Gallery</h2>
+         <h2 id="gallery">Gallery</h2>
         <div class="row">
             <div class="col-3">
                 <img src="img/archer-wood.jpg" alt="Archer" class="gallery">
@@ -151,12 +157,12 @@
         </div>
         
 
-         <h2>Contact Us</h2>
+         <h2 id="contact-us">Contact Us</h2>
         <div class="row">
             <ul class="contact">
-                <li>Location</li>
-                <li>Open hours</li>
-                <li>Contact</li>
+                <li><img src="img/location.png" alt=" logo location">Location: Kirchschlag bei Linz</li>
+                <li><img src="img/open.png" alt="logo clock">Open hours: Mo-So from 8am to 9pm</li>
+                <li><img src="img/phone.png" alt="logo phone">Contact: 07242 6754892</li>
             </ul>
         </div>
         <div class=form-container>
@@ -170,14 +176,15 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+    </main>
 
     <footer>
         <div class="container">
             <div class="row-placeholder">
                 <nav>
                     <ul>
-                        <li><a href="#">Impressum</a></li>
-                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="impressum.html" target="_blank">Imprint</a></li>
+                        <li><a href="impressum.html" target="_blank">Copyright</a></li>
                     </ul>
                 </nav>
                 <div>
@@ -186,7 +193,7 @@
             </div>
         </div>
     </footer>
-
+    
 </body>
 
 </html>
